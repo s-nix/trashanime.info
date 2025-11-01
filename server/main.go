@@ -10,7 +10,6 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/anime", getAnime)
-
 	err := router.Run("localhost:8080")
 	if err != nil {
 		return
